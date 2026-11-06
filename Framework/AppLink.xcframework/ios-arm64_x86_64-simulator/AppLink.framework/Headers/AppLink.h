@@ -3,7 +3,7 @@
 //  AppLink
 //
 //  Created by Hyunjoon Ko on 7/31/2024.
-//  Copyright © 2024 Vlending Co., Ltd. All rights reserved.
+//  Copyright © 2024 OGQ Vlending. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -42,13 +42,13 @@ pod 'AppLinkSDK-iOS'
 To add AppLink SDK to a [Swift Package Manager](https://www.swift.org/documentation/package-manager/) based project, add:
 ```swift
 dependencies: [
-    .package(url: "https://github.com/vlending-dev/applink-ios-sdk.git", .upToNextMajor(from: "0.8.0"))
+    .package(url: "https://github.com/OGQ-Vlending/applink-ios-sdk.git", .upToNextMajor(from: "0.8.1"))
 ]
 ```
 
 ## License
 
-See the [LICENSE](https://github.com/vlending-dev/applink-ios-sdk/blob/master/LICENSE.txt) file.
+See the [LICENSE](https://github.com/OGQ-Vlending/applink-ios-sdk/blob/master/LICENSE.txt) file.
 Copyright © OGQ Vlending.
 
 ## Contact
