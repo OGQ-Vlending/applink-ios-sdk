@@ -27,23 +27,34 @@ Learn more about the provided documentation, integrating the SDK into your app, 
 
 ## Installation
 
-### CocoaPods
+### Swift Package Manager (recommended)
 
-```ruby
-platform :ios, '15.0'
-use_frameworks!
-source 'https://github.com/CocoaPods/Specs.git'
-
-pod 'AppLinkSDK-iOS'
-```
-
-### Swift Package Manager
+In Xcode, choose File > Add Package Dependencies and enter `https://github.com/OGQ-Vlending/applink-ios-sdk.git`.
 
 To add AppLink SDK to a [Swift Package Manager](https://www.swift.org/documentation/package-manager/) based project, add:
 ```swift
 dependencies: [
     .package(url: "https://github.com/OGQ-Vlending/applink-ios-sdk.git", .upToNextMajor(from: "0.8.1"))
 ]
+```
+
+### CocoaPods
+
+CocoaPods trunk stops accepting new versions on December 2, 2026 ([announcement](https://blog.cocoapods.org/CocoaPods-Specs-Repo/)). AppLink SDK versions released after that date are not available through `pod 'AppLinkSDK-iOS'` alone. To get them, point the pod to this repository and the version tag:
+
+```ruby
+platform :ios, '15.0'
+use_frameworks!
+
+pod 'AppLinkSDK-iOS', :git => 'https://github.com/OGQ-Vlending/applink-ios-sdk.git', :tag => '0.8.1'
+```
+
+Replace `0.8.1` with the version you want. To update, change the tag and run `pod update AppLinkSDK-iOS`.
+
+Versions already published to CocoaPods trunk keep working without the `:git` option:
+
+```ruby
+pod 'AppLinkSDK-iOS'
 ```
 
 ## License
